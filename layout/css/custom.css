@@ -1,0 +1,458 @@
+
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#bcbebf;
+}
+.main-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    padding: 0;
+    background-color:white;
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+
+.border-bottom{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+.required:after {
+    content:" *";
+    color: #b11f2e;
+}
+/*==================== Grid rules ===================*/
+.main-content{
+    grid-column: 1/11;
+    padding: 5px;
+    min-height: 600px;
+}
+.page-navigation{
+    grid-column: 1/11;
+    margin: auto;
+}
+.main-footer{
+    grid-column: 1/11;
+}
+.main-header {
+    padding-top: 10px;
+    grid-column: 1/11;
+
+}
+.membership.login-page , .membership{
+    grid-column: 1/11; /*login, sign up/update pages*/
+    margin-top: 10px;
+}
+#date{ /*bottom page*/
+    grid-column: 1/11;
+    margin: 20px auto auto;
+    font-size: 12px;
+    text-align: center;
+    background-color: #191970;
+    color: white;
+    width: 100%;
+}
+.right-sidebar.send-cv{ /*cv page*/
+    grid-column: 1/11;
+    margin: 10px auto;
+    display: block;
+}
+
+article h5{
+    font-size: 1.1rem;
+    /*font-family: Arial, Helvetica, sans-serif*/
+}
+article p{
+    margin-bottom: 5px;
+    font-weight: 560;
+}
+article span{
+    font-family: "Times New Roman", Times, serif;
+}
+article{
+    padding: 0.5em;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.main-footer ul{
+}
+.main-footer ul a{
+    width: fit-content;
+}
+.main-footer > div{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+.main-footer #social-icons{
+    text-align: center;
+    margin: 10px auto auto;
+
+}
+
+
+/*-----Start main header rules--------*/
+
+.main-header{
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.main-header nav:first-child{
+    border-bottom: solid 1px; /*top nav*/
+}
+.main-header nav ul:first-child li a span{
+    display: none; /*Site title*/
+}
+.nav a{
+    color: black;
+}
+.navbar .nav-link:focus, .nav-link:hover, a,.page-link,.cv-btn,.navbar span {
+    color: #0101d9;
+}
+.nav-menu li > a{
+    padding: 5px;
+}
+.dropdown-menu li a{
+    padding: 0.7em;
+}
+.dropdown-menu {
+    min-width: 11rem;
+}
+.site-logo{
+    width: 2rem;
+}
+.signin-small-sc{
+    display: block;
+}
+.signin-big-sc, .right-sidebar {
+    display: none;
+}
+.membership form{
+    max-width: 800px;
+    margin: auto auto 10px;
+    border-bottom-style: solid;
+    border-right-width: thin;
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+.membership form input,select{
+    max-width: 400px;
+}
+.membership form h1{
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+}
+.membership form h3{
+    margin-top: 1em;
+}
+.membership h2{
+    text-align: center;
+    max-width: 800px;
+    margin: auto auto;
+    background-color: #191970;
+    color: white;
+    padding: 10px;
+}
+.membership form button[type='submit']{
+    width: 100%;
+    margin-top: 1em;
+}
+.invalid{
+    font-family: var(--bs-font-sans-serif);
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+#logo-upload{
+    display: inline;
+    width: 75%;
+}
+.form-control{
+    transition: none;
+}
+.account-page h2{
+    margin-top: 10px;
+    text-align: center;
+}
+.cv-profile div,address{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cv-profile h2{
+    background-color: #191970;
+    color: white;
+    padding: 10px;
+}
+.cv-profile address {
+    display: block;
+    font-style: italic;
+}
+.cv-profile h3{
+    font-style: italic;
+    color: #0146ad;
+}
+h3,h4{
+    font-size: 1.1em;
+}
+.manage-ads div{
+    margin-top: 10px;
+}
+.preserve-format{
+    font-size: 1em;
+    white-space: pre-wrap;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+#job-info{
+    font-size: 0.8em;
+    font-family: 'Courier New', monospace;
+}
+.ads-page div{
+    padding: 0.5em;
+}
+.ads-page .qualification{
+    background-color: #eceff4;
+}
+
+.company-logo{
+    max-width: 60px;
+    max-height: 60px;
+}
+.main-content{
+    word-break: break-word;
+}
+#result-info{
+    text-align: center;
+    outline: #191970 solid thin;
+}
+/*=========================search=============================*/
+.search, .ad-container{
+    display: flex;
+    flex-direction: column;
+}
+.search a{
+    color: #0101d9;
+    text-decoration: none;
+}
+.search-links{
+    text-align: end;
+}
+.search-links a{
+    display: inline-block;
+    margin: 10px 10px 5px;
+}
+
+.main-content hr:first-of-type{
+    margin-top: 0;
+}
+#filter , #keyword-search{
+    min-width: 50%;
+    align-self: center;
+    margin-top: 10px;
+}
+.search form{
+    border: 1px solid;
+    margin-bottom: 10px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search form select{
+    margin-bottom: 10px;
+}
+
+section h2{
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+.account-page section h3{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #191970;
+    color: white;
+    padding: 10px;
+}
+/*==================Right side bar==================*/
+.right-sidebar ul li{
+    margin-bottom: 5px;
+}
+.right-sidebar ul li:first-child{
+    margin-top: 5px;
+}
+.right-sidebar ul{
+    margin-top: 20px;
+}
+.apps-list li{
+    background-color: #f0f8ff;
+}
+.membership.login-page{
+    width: 100%;
+}
+
+.main-content{
+    margin: 0;
+}
+.nav-menu > li{
+    margin-right: 5px;
+}
+/*=========Modify bootstrap colors===============*/
+.btn-danger{
+    background-color: #b30000;
+}
+.text-red{
+    color: #b30000;
+}
+.btn-secondary{
+    background-color: #485151;
+}
+.btn-primary{
+    background-color: #0146ad;
+}
+.btn-success{
+    background-color: #198754;
+}
+
+.active > .page-link, .page-link.active{
+    background-color: #0101d9;
+}
+.btn, button{
+    font-size: 1em;
+}
+
+/* screens that has max width between 40-60em */
+@media screen and (min-width: 40em) {
+    .nav-menu > li{
+        margin-right: 10px;
+    }
+    .membership.login-page{
+        grid-column: 1/11;
+        min-width: 70%;
+        margin: 10px auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .membership.login-page form{
+        padding-left: 20px;
+    }
+    .right-sidebar.send-cv{
+        grid-column: 1/11;
+    }
+    .ads-page .qualification p{
+        padding-left: 0.7em;
+    }
+    .main-content{
+        margin: 0.2em;
+    }
+    h3,h4{
+        font-size: 1.3em;
+    }
+    #job-info{
+        font-size: 1em;
+        font-family: 'Courier New', monospace;
+    }
+    .main-content.account-page.dashboard{
+        grid-column: 1/11;
+        min-width: 70%;
+        border-left-style:solid;
+        border-right-style: solid;
+        border-left-width: thin;
+        border-right-width: thin;
+        margin: auto auto 10px;
+        text-align: start;
+    }
+}
+
+/* all other screens that have minimum width 60em */
+@media screen and (min-width: 60em) {
+    .main-container {
+        max-width: 1400px;
+        width: 98%;
+    }
+    .page-navigation{
+        grid-column: 1/8;
+    }
+    .main-content{
+        grid-column: 1/8;
+    }
+    .right-sidebar{
+        display: block;
+        grid-column: 8/11;
+        grid-row: 2/3;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .right-sidebar.send-cv{
+        grid-column: 8/11;
+    }
+    .membership{
+        grid-column: 1/8;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .main-content{
+        margin: 0.7em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    article h5{
+        font-size: 1.3rem;
+        width: fit-content;
+    }
+    .membership.create-ads-page form{
+        min-width: 98%;
+    }
+    .main-content.account-page section{
+        padding-left: 10px;
+    }
+    .right-sidebar.account-page{
+        background-color: #efefef;
+    }
+    .right-sidebar.account-page h3{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .right-sidebar{
+        padding: 5px;
+    }
+    #filter , #keyword-search{
+        display: block;
+        align-self: normal;
+    }
+    .search-links, .filter-link, .search-link,.main-header .signin-small-sc{
+        display: none;
+    }
+    .main-header .signin-big-sc{
+        display: block;
+    }
+    .main-header nav ul:first-child li a span{
+        display: inline; /*Site title*/
+    }
+    .main-header nav ul li a{
+        padding: 10px; /*top main nav*/
+    }
+    .company-logo{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .site-logo{
+        width: 3rem;
+    }
+}
